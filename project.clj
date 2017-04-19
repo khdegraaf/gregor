@@ -1,13 +1,11 @@
-(defproject io.weft/gregor "0.5.2-SNAPSHOT"
+(defproject org.clojars.khdegraaf/gregor "0.5.3"
   :min-lein-version "2.0.0"
-  :description "Lightweight Clojure bindings for Kafka 0.9+"
-  :url "https://github.com/weftio/gregor.git"
+  :description "Lightweight Clojure bindings for Kafka 0.10+"
+  :url "https://github.com/khdegraaf/gregor.git"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.apache.kafka/kafka_2.12 "0.10.2.0"]]
-  :plugins [[s3-wagon-private "1.1.2"]
-            [lein-codox "0.9.3"]]
-  :codox {:output-path "doc"}
-  :deploy-repositories {"clojars" {:url "https://clojars.org/repo"
-                                   :sign-releases false}})
+  :plugins [[lein-codox "0.9.3"]]
+  :deploy-repositories [["releases" :clojars]]
+  :codox {:output-path "doc"})
